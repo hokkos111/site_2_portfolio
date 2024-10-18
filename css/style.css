@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+html {
+  box-sizing: border-box;
+}
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  font-family: 'Lato';
+}
+:root {
+  --accent-color: #01996D;
+  --white-color: #fff;
+  --dark_green-color: #245852;
+}
+h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+  margin: 0;
+  padding: 0;
+}
+/* Стили текста */
+.text-p {
+  color: #424242;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 150%;
+}
+.text-h1 {
+  color: var(--accent-color);
+  font-family: Georgia;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 74px;
+  max-width: 440px;
+  margin-bottom: 30px;
+}
+.text-h2 {
+  font-family: Georgia;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 155%;
+  color: var(--accent-color);
+}
+
+.text-h4 {
+  color: #424242;
+  font-size: 24px;
+  font-weight: 600;
+}
+.container {
+  max-width: 1370px;
+  margin: 0 auto;
+}
+/* Header */
+.header_top{
+  border-bottom: 1px solid #D6D6D6;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding: 17px 0;
+  align-items: center;
+}
+.logo {
+  
+}
+.nav {
+  display: flex;
+  list-style: none;
+  margin-right: 40px;
+}
+.nav-item {
+  color: rgb(41, 41, 41);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-right: 72px;
+}
+.nav-item:hover {
+  color: var(--accent-color);
+  transition: 0.2s;
+}
+.sign {
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 33px;
+}
+.top_btn {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  padding: 13px 49px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.header {
+  background-image: url(../img/BG.png);
+  padding: 174px 0 336px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header_p {
+  max-width: 420px;
+  margin-bottom: 52px;
+}
+.button_style {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  padding: 20px 49px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+@media screen and (max-width: 1400px){
+  .container{
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media screen and (max-width: 1280px){
+  .top {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 768px){
+  .nav {
+    margin-right: 0;
+  }
+  .nav-item {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .headline {
+    text-align: center;
+  }
+  .text-h1, .header_p {
+    margin: 0 auto 30px;
+  }
+}
+/* Раздел: How it works */
+.how_it_works {
+  padding-top: 173px;
+}
+.how_it_works_h4{
+  margin-bottom: 4px;
+}
+.how_it_works_top {
+}
+.how_it_works_top_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.how_it_works_h2 {
+  max-width: 578px;
+}
+.how_it_works_p {
+  max-width: 650px;
+  
+}
