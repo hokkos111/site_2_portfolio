@@ -41,7 +41,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li {
   line-height: 155%;
   color: var(--accent-color);
 }
-
 .text-h4 {
   color: #424242;
   font-size: 24px;
@@ -60,9 +59,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li {
   justify-content: space-between;
   padding: 17px 0;
   align-items: center;
-}
-.logo {
-  
 }
 .nav {
   display: flex;
@@ -92,7 +88,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-
   font-size: 20px;
   font-weight: 400;
   line-height: 25px;
@@ -122,16 +117,201 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li {
   letter-spacing: 0px;
   text-align: center;
 }
+/* Раздел: How it works */
+.how_it_works {
+  padding-top: 173px;
+  padding-bottom: 270px;
+}
+.how_it_works_h4{
+  margin-bottom: 4px;
+}
+.how_it_works_top_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 54px;
+}
+.how_it_works_h2 {
+  max-width: 578px;
+}
+.how_it_works_p {
+  max-width: 650px;
+  
+}
+.how_it_works_bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 95px;
+}
+.how_it_works-item {
+  position: relative;
+  max-width: 390px;
+  margin: 0 auto;
+}
+.how_it_works_number {
+  color: rgba(1, 153, 109, 0.2);
+  font-family: Georgia;
+  font-size: 150px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  margin-bottom: 10px;
+}
+.how_it_works_bottom_h3 {
+  position: absolute;
+  top: 135px;
+  right: 55px;
+  width: 90%;
+  font-family: Georgia;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: center;
+}
+.how_it_works-item:nth-child(2) {
+  top: 287px;
+}
+.how_it_works-item:nth-child(3) {
+  top: 52px;
+}
+.how_it_works-item:nth-child(2) .how_it_works_bottom_h3 {
+  right: 0;
+  text-align: right;
+}
+.how_it_works-item_img {
+  margin-top: 40px;
+}
+/* Раздел: 03 */
+.s03 {
+  background-color: var(--dark_green-color);
+  padding-top: 229px;
+  padding-bottom: 177px;
+}
+.s03__flex {
+  max-width: 1506px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.s03_h2 {
+  color: #fff;
+  margin-bottom: 40px;
+}
+.s03_p {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 57px;
+}
+/* Раздел: Our product */
+.Our_product {
+  padding-top: 116px;
+  padding-bottom: 240px;
+}
+.Our_product__flex {
+  display: flex;
+  justify-content: space-between;
+}
+.Our_product-left {
+  position: relative;
+}
+.Our_product_photo {
+  margin-left: 60px;
+}
+.Our_product_card {
+  position: absolute;
+  top: 340px;
+  left: -20px;
+}
+.Our_profuct-right {
+  max-width: 584px;
+  margin-top: 7px;
+}
+.Our_product_h4 {
+  margin-bottom: 15px;
+}
+.Out_products_h2 {
+  padding-bottom: 20px;
+}
+.Our_product_p {
+  margin-bottom: 34px;
+}
+/* Раздел: footer */
+.footer {
+  background-color: var(--dark_green-color);
+  padding-top: 105px;
+  padding-bottom: 144px;
+}
+.footer_logo {
+  margin-bottom: 70px;
+}
+.footer_menu {
+  list-style: none;
+}
+.footer_menu-item {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
 @media screen and (max-width: 1400px){
   .container{
     padding-right: 15px;
     padding-left: 15px;
+  }
+  .how_it_works_bottom {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .how_it_works-item:nth-child(3) {
+    top: 0px;
+  }
+  .how_it_works-item:nth-child(2) {
+    top: 0px;
+  }
+  .how_it_works-item:nth-child(2) .how_it_works_bottom_h3 {
+    text-align: left;
+  }
+  .how_it_works_bottom_h3 {
+    text-align: left;
+    left: 80px;
+  }
+  .s03__flex {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  .s03_content {
+    margin-bottom: 50px;
+  }
+  .Our_product__flex {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .Our_profuct-right {
+    margin-top: 80px;
   }
 }
 @media screen and (max-width: 1280px){
   .top {
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+  .how_it_works_h4{
+    text-align: center;
+  }
+  .how_it_works_top_content {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .how_it_works_bottom {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .how_it_works_bottom_h3 {
+    width: 100%;
+    left: 80px;
   }
 }
 @media screen and (max-width: 768px){
@@ -148,25 +328,4 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li {
   .text-h1, .header_p {
     margin: 0 auto 30px;
   }
-}
-/* Раздел: How it works */
-.how_it_works {
-  padding-top: 173px;
-}
-.how_it_works_h4{
-  margin-bottom: 4px;
-}
-.how_it_works_top {
-}
-.how_it_works_top_content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.how_it_works_h2 {
-  max-width: 578px;
-}
-.how_it_works_p {
-  max-width: 650px;
-  
 }
